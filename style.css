@@ -6,8 +6,30 @@
     /* box-sizing: border-box; */
 }
 
+body {
+    background-color: #FFF8EA;
+}
+
+html {
+    font-family: 'Kiwi Maru', serif;
+}
+
+button, input, textarea {
+    font-family : inherit;
+}
+
+/* 中央寄せ */
+
+.BOX {
+    margin-top: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/*  */
+
 .input_area {
-    background: #c1ffff;
+    background: #D3D4B2;
     width: 400px;
     height: 30px;
     padding: 8px;
@@ -17,7 +39,7 @@
 
 input {
     border-radius: 16px;
-    padding: 8px 16px;
+    padding: 6px 16px;
     border: none;
 }
 
@@ -29,13 +51,13 @@ button {
 }
 
 button:hover {
-    background: #0d41ce;
-    color: #fff;
+    background: #8a8a78;
+    color: #f6f6f6;
     cursor: pointer;
 }
 
 .incomplete_area {
-    background: #c6ffe2;
+    background: #f6e5c5;
     width: 400px;
     min-height: 200px;
     padding: 8px;
@@ -48,7 +70,7 @@ ul {
 }
 
 li {
-    margin-bottom: 4px;
+    margin: 2% 7%;
 }
 
 .list_row {
@@ -61,10 +83,21 @@ h2 {
 }
 
 .complete_area {
-    background: #ffffe0;
+    background: #e1d8c9;
     width: 400px;
     min-height: 200px;
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
 }
+
+.irasuto {
+    background-image: url(./img/kuma.png);
+    min-height: 200px;
+    width: 400px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+

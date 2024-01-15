@@ -69,6 +69,7 @@ const onclickAdd = () => {
 
     // 完了ボタン
     completebutton.addEventListener("click",() => {
+        
         // 完了ボタンを押されたリストを削除
         const deletetarget = div.parentNode;
         document.getElementById("incomplete_list").removeChild(deletetarget);
@@ -97,6 +98,7 @@ const onclickAdd = () => {
 
 
 
+
         // 戻すボタン
         backbutton.addEventListener( "click", () => {
         // 戻すボタンを押されたときにリストを削除
@@ -115,42 +117,13 @@ const onclickAdd = () => {
 
         document.getElementById("incomplete_list").appendChild(backtarget.parentNode);
         })
+
+        
     })
 
 
 
-//     const button = document.createElement("button");
-//     // 戻すボタン おためし
-//     backbutton.addEventListener( "click", () => {
-//         // まず削除をする
-//         const deletetarget = div.parentNode;
-//         document.getElementById("complete_list").removeChild(deletetarget);
 
-
-// });
-
-    }
-    // 完了から戻すボタン
 }
 
-
-
-
-
-// 作成お試し ↓
-
-// createElement⇒HTMLのタグを作成する liタグ作ってる
-// const li = document.createElement("li");
-// // console.log(li);
-
-// const div = document.createElement("div");
-// // console.log(div)
-
-// const ptag = document.createElement("p");
-// // console.log(ptag);
-
-// li.appendChild(div);
-// div.appendChild(ptag);
-// ptag.innerHTML = "aaa";
-
-// console.log(li);
+}
