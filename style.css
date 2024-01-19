@@ -21,7 +21,7 @@ button, input, textarea {
 /* 中央寄せ */
 
 .BOX {
-    margin-top: 5%;
+    margin: 5%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ button:hover {
 }
 
 .incomplete_area {
-    background: #f6e5c5;
+    background: #e1d8c9;
     width: 400px;
     min-height: 200px;
     padding: 8px;
@@ -83,7 +83,7 @@ h2 {
 }
 
 .complete_area {
-    background: #e1d8c9;
+    background: #f6e5c5;
     width: 400px;
     min-height: 200px;
     padding: 8px;
@@ -92,12 +92,26 @@ h2 {
 }
 
 .irasuto {
-    background-image: url(./img/kuma.png);
+    /* background-image: url(./img/kuma.png); */
     min-height: 200px;
-    width: 400px;
+    /* width: 400px; */
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat
 }
 
 
+/* レスポンシブ */
+@media screen and (min-width:320px)and (max-width:438px) {
+    .input_area {
+        width: 100%;
+    }
+
+    .incomplete_area {
+        width: 100%;
+    }
+
+    .complete_area {
+        width: 100%;
+    }
+}
