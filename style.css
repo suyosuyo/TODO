@@ -92,9 +92,9 @@ h2 {
 }
 
 .irasuto {
-    /* background-image: url(./img/kuma.png); */
+    background-image: url(./img/hamu1.png);
     min-height: 200px;
-    /* width: 400px; */
+    width: 400px;
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat

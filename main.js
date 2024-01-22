@@ -1,19 +1,3 @@
-// ◎javascriptの動き
-
-// ・追加ボタンを押す 
-// ⇒ 未完了TODOに作成
-// ⇒ inputのvalue(文字)を削除
-
-// ・未完了のTODO 完了ボタンを押す
-// ⇒ 完了TODOに作成
-// ⇒ 未完了TODOから削除
-
-// ・未完了のTODO 削除ボタンを押す
-// ⇒ 未完了TODOから削除
-
-// ・完了のTODO 戻すボタンを押す
-// ⇒ 未完了TODOに作成
-// ⇒ 完了TODOから削除
 
 // このIDを(getElementById)クリックしたとき(addEventListener)に以下の動作をします
 document.getElementById("add_button").addEventListener("click",() => onclickAdd());
@@ -81,6 +65,14 @@ const onclickAdd = () => {
         // console.log(text);
         // 完了のところと未完了のところでボタンの数とかが違うので、一回addtarget(list)の中身を削除する
         addtarget.textContent = null;
+
+        // 絵
+        
+        document.getElementById("Irasuto").style.backgroundImage = "url(./img/hamu2.png)";
+        window.setTimeout(function(){
+            document.getElementById("Irasuto").style.backgroundImage = "url(./img/hamu1.png)";;
+        }, 3000);
+
 
 
         // ボタン作成
