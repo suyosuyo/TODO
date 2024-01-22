@@ -68,9 +68,9 @@ const onclickAdd = () => {
 
         // 絵
         
-        document.getElementById("Irasuto").style.backgroundImage = "url(./img/hamu2.png)";
+        document.getElementById("Irasuto").style.backgroundImage = "url(./img/sugoi.png)";
         window.setTimeout(function(){
-            document.getElementById("Irasuto").style.backgroundImage = "url(./img/hamu1.png)";;
+            document.getElementById("Irasuto").style.backgroundImage = "url(./img/kuma.png)";;
         }, 3000);
 
 

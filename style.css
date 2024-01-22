@@ -67,6 +67,11 @@ button:hover {
 
 ul {
     margin-left: 16px;
+    z-index: 2;
+}
+
+button {
+    z-index: 2;
 }
 
 li {
@@ -87,17 +92,24 @@ h2 {
     width: 400px;
     min-height: 200px;
     padding: 8px;
-    margin: 8px;
+    margin: 45px 8px 8px;
     border-radius: 8px;
 }
 
 .irasuto {
-    background-image: url(./img/hamu1.png);
+    background-image: url(./img/kuma.png);
     min-height: 200px;
-    width: 400px;
-    background-position: right;
+    width: 200px;
     background-size: contain;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: -127px;
+    right: -20px;
+}
+
+.complete_area {
+    position: relative;
 }
 
 
@@ -113,5 +125,11 @@ h2 {
 
     .complete_area {
         width: 100%;
+    }
+
+    .irasuto {
+        min-height: 150px;
+        top: -94px;
+        right: -70px;
     }
 }
