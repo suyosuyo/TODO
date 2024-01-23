@@ -1,5 +1,4 @@
 
-// このIDを(getElementById)クリックしたとき(addEventListener)に以下の動作をします
 document.getElementById("add_button").addEventListener("click",() => onclickAdd());
 
 const onclickAdd = () => {
@@ -10,10 +9,7 @@ const onclickAdd = () => {
 
 
     // 入力された値の代入
-    // class.add_textの中に入れたのをだします みたいな？ valueは値のこと 中に書いてるやつのこと
     const inputText = document.getElementById("add_text").value;
-    // console.log(inputText);
-    // 次にそれを消しますよ
     document.getElementById("add_text").value = "";
 
 
@@ -36,7 +32,6 @@ const onclickAdd = () => {
     div.appendChild(ptag);
     div.appendChild(completebutton);
     div.appendChild(deletebutton);
-    // ptagにinputTextで設定した入力したものをいれる
     ptag.innerHTML = inputText;
 
     // 未完了のTODOに追加
@@ -45,9 +40,7 @@ const onclickAdd = () => {
 
     // 削除ボタン
     deletebutton.addEventListener("click" , () => {
-        // divタグの親要素を調べる、見つける parentNode 親要素がありますか？
         const deletetarget = div.parentNode;
-        // 見つけた親要素を削除する ↑のdivの親 listを削除する
         document.getElementById("incomplete_list").removeChild(deletetarget);
     })
 
@@ -60,23 +53,27 @@ const onclickAdd = () => {
 
         // 完了したTODOにリストを追加
         const addtarget = ptag.parentNode;
-        // firstElementChild 親の最初の子要素 innnerHTML その中の文字
         const text = addtarget.firstElementChild.innerHTML;
-        // console.log(text);
-        // 完了のところと未完了のところでボタンの数とかが違うので、一回addtarget(list)の中身を削除する
         addtarget.textContent = null;
 
         // 絵
+
+        var num = Math.floor(10 * Math.random());
+            if(num <= 5){
+                document.getElementById("Irasuto").style.backgroundImage = "url(./img/sugo-i.png)";
+
+            } else if(num >= 5) {
+                document.getElementById("Irasuto").style.backgroundImage = "url(./img/otukaresama.png)";
+           
+            } 
         
-        document.getElementById("Irasuto").style.backgroundImage = "url(./img/sugoi.png)";
         window.setTimeout(function(){
-            document.getElementById("Irasuto").style.backgroundImage = "url(./img/kuma.png)";;
+            document.getElementById("Irasuto").style.backgroundImage = "url(./img/kumasan.png)";
         }, 3000);
 
 
 
         // ボタン作成
-        // ボタンを作って、その中に戻るを書いて、戻るボタンを作成する
         const backbutton = document.createElement("button");
         backbutton.innerHTML = "戻す";
 
